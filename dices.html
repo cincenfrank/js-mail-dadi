@@ -12,7 +12,38 @@
 
 <body>
     <header></header>
-    <main></main>
+    <main>
+        <div class="container">
+            <form>
+                <div>
+                    <label for="player-name" class=" form-label">Insert your name</label>
+                    <input type="text" id="player-name" class=" form-control">
+                    <div class="invalid-feedback">Name cannot be empty.</div>
+                </div>
+                <div>
+                    <label for="dice-select" class=" form-label">Select Dice</label>
+                    <select class="form-select" id="dice-select">
+                        <option value="6">6 Faces Dice</option>
+                        <option value="12">12 Faces Dice</option>
+                        <option value="20">20 Faces Dice</option>
+                        <option value="50">50 Faces Dice</option>
+                        <option value="100">100 Faces Dice</option>
+                    </select>
+                    <div class="invalid-feedback">Invalid value.</div>
+                    <div class="btn btn-info" id="start-button">Roll Dice!</div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col player">
+
+                </div>
+                <div class="col computer">
+
+                </div>
+            </div>
+
+        </div>
+    </main>
     <footer></footer>
     <script src="js/dices.js"></script>
 </body>
